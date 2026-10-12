@@ -22,7 +22,7 @@ export const HomeScreen: React.FC = () => {
 
       <Card>
         <Text style={{ ...Typography.body, color: Colors.textPrimary, textAlign: 'center', lineHeight: 24, marginBottom: 16 }}>
-          "My name is Ali Salaheldin."
+          "My name is Nuzha Zainalabdeen."
         </Text>
         <Divider />
         <Text style={globalStyles.label}>Registration Number</Text>

@@ -32,14 +32,13 @@
       "expo-image-picker",
       "expo-camera"
     ],
-    "extra": {
-      "eas": {
-        "projectId": "8834f0bc-6d3d-4f85-a968-dda5df3375c4"
-      }
-    },
-    "owner": "5doll",
     "runtimeVersion": {
       "policy": "appVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "af37f094-1619-4911-b72b-cb26a791cd19"
+      }
     }
   }
 }
