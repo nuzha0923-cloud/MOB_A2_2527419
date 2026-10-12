@@ -1,23 +1,23 @@
 import { Profile, Skill, EducationEntry, Project, AppMetadata } from '../types';
 
 export const DEFAULT_PROFILE: Profile = {
-  fullName: 'Ali Salaheldin',
-  registrationNumber: '2526883',
-  verificationCode: 'MOB-A2-6883',
-  headline: 'Mobile Application Developer',
-  biography: 'Passionate software engineering student with a focus on mobile development using React Native and Expo. Experienced in building cross-platform applications with modern tooling.',
-  primarySkill: 'React Native',
+  fullName: 'Nuzha Zainalabdeen Mohamed Ismail',
+  registrationNumber: '25/27419',
+  verificationCode: 'MOB-A2-7419',
+  headline: 'Mobile Developer & Web Designer',
+  biography: 'Passionate software engineering student specializing in mobile development, web design, and UI/UX. Experienced in building cross-platform applications with React Native and creating responsive web interfaces.',
+  primarySkill: 'Mobile Development',
   availability: 'available',
   profileImageUri: null,
 };
 
 export const SKILLS: Skill[] = [
-  { id: '1', name: 'React Native' },
-  { id: '2', name: 'TypeScript' },
-  { id: '3', name: 'JavaScript/ES6+' },
-  { id: '4', name: 'Expo' },
-  { id: '5', name: 'Git/GitHub' },
-  { id: '6', name: 'REST APIs' },
+  { id: '1', name: 'Mobile Development' },
+  { id: '2', name: 'Web Design' },
+  { id: '3', name: 'UI/UX Design' },
+  { id: '4', name: 'React Native' },
+  { id: '5', name: 'JavaScript/TypeScript' },
+  { id: '6', name: 'Responsive Design' },
 ];
 
 export const EDUCATION: EducationEntry[] = [
@@ -27,7 +27,7 @@ export const EDUCATION: EducationEntry[] = [
     qualification: 'Bachelor of Software Engineering',
     startDate: '2023',
     endDate: '2026',
-    description: 'Focus on mobile application development, software architecture, and agile methodologies.',
+    description: 'Focus on mobile application development, web design, software architecture, and agile methodologies.',
   },
   {
     id: '2',
@@ -42,24 +42,16 @@ export const EDUCATION: EducationEntry[] = [
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Reflect',
-    problem: 'Students and professionals struggle to maintain consistent reflection habits for personal growth and learning retention.',
-    contribution: 'Designed and developed the complete mobile application including UI/UX, state management, local persistence, and export functionality.',
-    technologies: ['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'React Navigation'],
-    description: 'A personal reflection journal app that helps users build a daily reflection habit. Features guided prompts, mood tracking, searchable entries, and data export. Built as a solo project demonstrating full-stack mobile development skills.',
-  },
-  {
-    id: '2',
-    title: 'Musanze Cooperative Harvest & Dispatch Decision Pipeline',
-    problem: 'Agricultural cooperatives in Musanze district faced challenges coordinating harvest schedules, quality grading, and dispatch logistics leading to post-harvest losses.',
-    contribution: 'Led the mobile client development team. Implemented offline-first data collection, GPS-tagged harvest records, photo evidence capture, and synchronization logic for intermittent connectivity.',
-    technologies: ['React Native', 'Expo', 'TypeScript', 'SQLite', 'Expo Location', 'Expo ImagePicker'],
-    description: 'A decision support system for agricultural cooperatives enabling harvest tracking, quality assessment, and dispatch optimization. The mobile app works offline in rural areas and syncs when connectivity is available. Team project with 4 developers.',
+    title: 'Musanze Market Application',
+    problem: 'Local farmers and buyers in Musanze district lacked a digital platform to connect, leading to inefficient market access and price discovery.',
+    contribution: 'Designed and developed the complete mobile application including UI/UX, vendor and buyer interfaces, product listings, and offline-capable data synchronization.',
+    technologies: ['React Native', 'Expo', 'TypeScript', 'AsyncStorage', 'React Navigation', 'Expo ImagePicker'],
+    description: 'A marketplace application connecting farmers and buyers in Musanze district. Features product listings with images, categories, price negotiation, offline-first data persistence, and location-based discovery. Built as a capstone project demonstrating full-stack mobile development and UI/UX design skills.',
   },
 ];
 
 export const APP_METADATA: AppMetadata = {
-  appName: 'AliPortfolio',
+  appName: "Nuzha's Portfolio",
   version: '1.0.0',
   dataUseStatement: 'This application stores your editable profile information locally on your device using AsyncStorage. No data is transmitted to external servers. Camera and gallery permissions are requested only when you choose to update your profile photo. You can reset your profile data at any time from the Profile Editor screen.',
 };

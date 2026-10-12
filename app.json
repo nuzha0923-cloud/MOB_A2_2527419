@@ -1,18 +1,18 @@
 {
   "expo": {
-    "name": "AliPortfolio",
-    "slug": "AliPortfolio",
+    "name": "Nuzha's Portfolio",
+    "slug": "NuzhaPortfolio",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
-    "scheme": "aliportfolio",
+    "userInterfaceStyle": "light",
+    "scheme": "nuzhaportfolio",
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#121212",
+        "backgroundColor": "#ffffff",
         "foregroundImage": "./assets/adaptive-icon.png"
       },
-      "package": "rw.ac.ines.ug2526883.aliportfolio",
+      "package": "rw.ac.ines.ug2527419.nuzhaportfolio",
       "permissions": [
         "android.permission.CAMERA",
         "android.permission.READ_EXTERNAL_STORAGE",
@@ -23,7 +23,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "rw.ac.ines.ug2526883.aliportfolio"
+      "bundleIdentifier": "rw.ac.ines.ug2527419.nuzhaportfolio"
     },
     "web": {
       "favicon": "./assets/favicon.png"

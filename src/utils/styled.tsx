@@ -3,30 +3,30 @@ import { StyleSheet, View, Text, TextInput, Pressable, Image, ScrollView, Activi
 const isAndroid = Platform.OS === 'android';
 
 export const Colors = {
-  background: '#0f0f0f',
-  surface: '#1a1a1a',
-  surfaceElevated: '#242424',
-  surfaceOverlay: '#2d2d2d',
-  border: '#2a2a2a',
-  borderLight: '#3a3a3a',
-  primary: '#007aff',
-  primaryLight: '#4da3ff',
-  primaryDark: '#0056cc',
-  secondary: '#0a84ff',
-  accent: '#ff9f0a',
-  success: '#30d158',
-  error: '#ff453a',
-  warning: '#ff9f0a',
-  textPrimary: '#ffffff',
-  textSecondary: '#a1a1a6',
-  textTertiary: '#6e6e73',
-  textInverse: '#000000',
+  background: '#fafafa',
+  surface: '#ffffff',
+  surfaceElevated: '#f5f5f5',
+  surfaceOverlay: '#eeeeee',
+  border: '#e0e0e0',
+  borderLight: '#eeeeee',
+  primary: '#2563eb',
+  primaryLight: '#3b82f6',
+  primaryDark: '#1d4ed8',
+  secondary: '#0ea5e9',
+  accent: '#f59e0b',
+  success: '#10b981',
+  error: '#ef4444',
+  warning: '#f59e0b',
+  textPrimary: '#111827',
+  textSecondary: '#4b5563',
+  textTertiary: '#9ca3af',
+  textInverse: '#ffffff',
   textOnPrimary: '#ffffff',
-  placeholder: '#5a5a5e',
-  overlay: 'rgba(0, 0, 0, 0.5)',
-  shadow: 'rgba(0, 0, 0, 0.3)',
-  divider: '#2a2a2a',
-  cardBorder: '#2a2a2a',
+  placeholder: '#9ca3af',
+  overlay: 'rgba(0, 0, 0, 0.4)',
+  shadow: 'rgba(0, 0, 0, 0.08)',
+  divider: '#e5e7eb',
+  cardBorder: '#e5e7eb',
 } as const;
 
 export const Spacing = {
@@ -63,10 +63,10 @@ export const Typography = {
 
 export const Shadows = {
   none: { shadowOpacity: 0, elevation: 0 },
-  sm: isAndroid ? { elevation: 2 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.18, shadowRadius: 2 },
-  md: isAndroid ? { elevation: 4 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.2, shadowRadius: 4 },
-  lg: isAndroid ? { elevation: 8 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.25, shadowRadius: 8 },
-  xl: isAndroid ? { elevation: 12 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.3, shadowRadius: 16 },
+  sm: isAndroid ? { elevation: 1 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 1 }, shadowOpacity: 0.1, shadowRadius: 2 },
+  md: isAndroid ? { elevation: 3 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.1, shadowRadius: 4 },
+  lg: isAndroid ? { elevation: 6 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.12, shadowRadius: 8 },
+  xl: isAndroid ? { elevation: 10 } : { shadowColor: Colors.shadow, shadowOffset: { width: 0, height: 8 }, shadowOpacity: 0.15, shadowRadius: 16 },
 } as const;
 
 export const globalStyles = StyleSheet.create({
@@ -155,7 +155,7 @@ export const globalStyles = StyleSheet.create({
     marginBottom: Spacing.xs,
   },
   input: {
-    backgroundColor: Colors.surfaceOverlay,
+    backgroundColor: Colors.surface,
     borderWidth: 1,
     borderColor: Colors.border,
     borderRadius: BorderRadius.sm,
@@ -188,8 +188,8 @@ export const globalStyles = StyleSheet.create({
     ...Shadows.sm,
   },
   buttonDisabled: {
-    backgroundColor: Colors.primaryDark,
-    opacity: 0.6,
+    backgroundColor: Colors.primaryLight,
+    opacity: 0.7,
     ...Shadows.none,
   },
   buttonText: {
@@ -240,16 +240,16 @@ export const globalStyles = StyleSheet.create({
     gap: Spacing.xs,
   },
   tag: {
-    backgroundColor: Colors.primary + '1a',
+    backgroundColor: Colors.primary + '15',
     borderRadius: BorderRadius.full,
     paddingHorizontal: Spacing.md,
     paddingVertical: Spacing.xs,
     borderWidth: 1,
-    borderColor: Colors.primary + '33',
+    borderColor: Colors.primary + '30',
   },
   tagText: {
     ...Typography.captionStrong,
-    color: Colors.primaryLight,
+    color: Colors.primary,
   },
   tagOutline: {
     backgroundColor: 'transparent',
